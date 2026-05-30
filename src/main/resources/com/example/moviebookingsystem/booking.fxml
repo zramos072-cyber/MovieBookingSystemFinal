@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.VBox?>
+
+<VBox alignment="CENTER"
+      spacing="10"
+      xmlns:fx="http://javafx.com/fxml"
+      fx:controller="Controller">
+
+    <Label text="MOVIE TICKET BOOKING SYSTEM"
+           style="-fx-font-size: 20px; -fx-font-weight: bold;" />
+
+    <Label text="Customer Name" />
+
+    <TextField fx:id="txtName"
+               prefWidth="200" />
+
+    <Label text="Select Movie" />
+
+    <ComboBox fx:id="comboMovie"
+              prefWidth="200" />
+
+    <Label text="Number of Tickets" />
+
+    <ComboBox fx:id="comboTickets"
+              prefWidth="200" />
+
+    <Button text="BOOK TICKET"
+            onAction="#bookTicket" />
+
+    <TextArea fx:id="txtSummary"
+              prefWidth="300"
+              prefHeight="150" />
+
+</VBox>
